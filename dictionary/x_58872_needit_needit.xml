@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element choice="1" label="Request Type" max_length="40" name="request_type_1" type="choice">
+            <choice>
+                <element label="Human Resources" sequence="10" value="hr"/>
+                <element label="Facilities" sequence="20" value="fac"/>
+                <element label="Legal" sequence="30" value="legal"/>
+                <element label="Marketing" sequence="40" value="mk"/>
+            </choice>
+        </element>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element label="When Needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+        <element choice="1" label="What Needed" max_length="40" name="what_needed" type="choice">
+            <choice>
+                <element label="Humand Resources 1" sequence="10" value="hr1"/>
+                <element label="Human Resources 2" sequence="20" value="hr2"/>
+                <element label="Facilities 1" sequence="30" value="fac1"/>
+                <element label="Facilities 2" sequence="40" value="fac2"/>
+                <element label="Legal 1" sequence="50" value="legal1"/>
+                <element label="Legal 2" sequence="60" value="legal2"/>
+                <element label="Marketing 1" sequence="70" value="mk1"/>
+                <element label="Markting 2" sequence="80" value="mk2"/>
+            </choice>
+        </element>
+    </element>
+</database>
